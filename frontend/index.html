@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="h-100">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Bootstrap e jQuery</title>
+    <link rel="icon" href="./public/logo-vector1.png"></link>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body class="d-flex justify-content-center align-items-center flex-column">
+
+    <header class="header px-5 py-3 w-100">
+        <img src="./public/logo-vector1.png" class="col-sm-2"/>    
+    </header>
+
+    <h1 class="my-4">Cadastro de Produtos</h1>
+
+    <form id="formularioContato" class="mb-4 mx-auto w-50">
+        <div class="mb-3">
+            <label for="cod" class="form-label">Código:</label>
+            <input type="number" class="form-control" id="cod" name="cod" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Descrição:</label>
+            <input type="text" class="form-control" id="description" name="description" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="valor" class="form-label">Valor:</label>
+            <input type="number" class="form-control" id="valor" name="valor" required>
+        </div>
+
+        <button type="button" class="btn btn-warning text-light" id="enviarFormulario">Enviar</button>
+    </form>
+
+</body>
+</html>
